@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cs223_final">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DarkTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/DarkTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.home.add.ServicesList"
+            android:parentActivityName=".ui.home.add.NewSubscription" />
+
+        <activity
+            android:name=".ui.home.add.NewSubscription"
+            android:parentActivityName=".ui.home.add.NewSubscription" />
+        <activity
+            android:name=".ui.home.CardActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Transparent" />
+    </application>
+
+</manifest>

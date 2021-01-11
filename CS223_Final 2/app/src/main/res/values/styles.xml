@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Dark/Night theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5E5D5D</item>
+        <item name="colorPrimaryDark">#313131</item>
+        <item name="colorAccent">#171f24</item>
+        <item name="backgroundcolor">#202124</item>
+        <item name="cardbackground">#3c4043</item>
+        <item name="textcolor">#FFFFFF</item>
+        <item name="tintcolor">#000000</item>
+        <item name="buttoncolor">#A29E9E</item>
+        <item name="iconcolor">#FFFFFF</item>
+        <item name="toolbarcolor">#1F1F1F</item>
+        <item name="fabcolor">#225e5e</item>
+        <item name="android:textColorHint">#E8E8E8</item>
+        <item name="devidercolor">#D6D6D6</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="SearchViewTheme">
+        <item name="android:textColorPrimary">?attr/textcolor</item>
+        <item name="colorControlNormal">?attr/textcolor</item>
+        <item name="colorControlHighlight">?attr/textcolor</item>
+        <item name="android:textColorHint">?attr/textcolor</item>
+        <item name="queryHint">?attr/textcolor</item>
+        <item name="queryBackground">?attr/toolbarcolor</item>
+    </style>
+
+
+    <style name="DarkTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">?attr/iconcolor</item>
+    </style>
+
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/fabcolor</item>//indicator color
+        <item name="tabIndicatorHeight">1dp</item>//indicator height
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.backToCancel" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:homeAsUpIndicator">@drawable/tool_cancel</item>
+    </style>
+
+
+    ////CALENDER VIEW
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">?attr/textcolor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">?attr/fabcolor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    //CLEAR CARD
+        <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:backgroundDimEnabled">true</item>
+            <item name="android:windowContentTransitions">true</item>
+        </style>
+
+
+</resources>

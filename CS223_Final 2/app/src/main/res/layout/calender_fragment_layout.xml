@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/sub_calender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="?attr/backgroundcolor"
+            android:foregroundGravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mcv_dateTextAppearance="@style/CalenderViewDateCustomText"
+            app:mcv_headerTextAppearance="@style/CalenderViewWeekCustomText"
+            app:mcv_leftArrow="@drawable/ic_left_arrow"
+            app:mcv_rightArrow="@drawable/ic_right_arrow"
+            app:mcv_selectionColor="?attr/fabcolor"
+            app:mcv_selectionMode="single"
+            app:mcv_showOtherDates="all"
+            app:mcv_tileSize="50dp"
+            app:mcv_weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            app:mcv_allowClickDaysOutsideCurrentMonth="true"
+
+            >
+
+        </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calender_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_calender" />
+
+        <TextView
+            android:id="@+id/filler"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calender_recycler" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
